@@ -19,3 +19,5 @@ export const colorsSecondaryLight: string;
 export const colorsSuccess: string;
 export const colorsTertiary: string;
 export const colorsWhite: string;
+export const fontsHeadline: string;
+export const fontsParagraph: string;

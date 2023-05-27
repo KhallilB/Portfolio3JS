@@ -1,3 +1,4 @@
+// Colors
 $primary: #022B3A;
 $primary-light: lighten($primary, 20);
 $primary-hover: lighten($primary, 30);
@@ -19,3 +20,7 @@ $danger: #FF1205;
 $success: #32C732;
 $black: #000000;
 $white: #FFFFFF;
+
+// Fonts
+$headline: 'Yeseva One', cursive;
+$paragraph: 'Josefin Sans', sans-serif;

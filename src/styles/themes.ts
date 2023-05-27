@@ -28,7 +28,10 @@ const theme = createTheme({
         white: style.colorsWhite,
       },
       space: {},
-      fonts: {}
+      fonts: {
+        headline: style.fontsHeadline,
+        paragraph: style.fontsParagraph,
+      }
     }
   })
 
