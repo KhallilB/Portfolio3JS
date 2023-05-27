@@ -1,0 +1,26 @@
+@import './style.scss';
+:export {
+    colors: {
+        primary: $primary; 
+        primaryLight: $primary-light;
+        primaryHover: $primary-hover;
+        primaryActive: $primary-active;
+        secondary : $secondary;
+        secondaryLight: $secondary-light;
+        secondaryHover: $secondary-hover;
+        secondaryActive: $secondary-active;
+        altPrimary: $alt-primary;
+        altPrimaryLight: $alt-primary-light;
+        altPrimaryHover: $alt-primary-hover;
+        altPrimaryActive:$alt-primary-active;
+        altSecondary: $alt-secondary;
+        altSecondaryLight: $alt-secondary-light;
+        altSecondaryHover: $alt-secondary-hover;
+        altSecondaryActive: $alt-secondary-active;
+        tertiary: $tertiary;
+        danger: $danger;
+        success: $success;
+        black: $black;
+        white: $white;
+    }
+}
