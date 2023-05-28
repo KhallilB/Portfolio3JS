@@ -3,7 +3,7 @@ import React from "react";
 const WelcomeMessage = (): JSX.Element => {
   return (
     <div>
-      <h1>Hi,{"I'm"} Kallil</h1>
+      <h1>Hi,{"I'm"} Khallil</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
         malesuada nibh. Nam condimentum, neque ornare venenatis scelerisque,

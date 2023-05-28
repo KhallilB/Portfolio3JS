@@ -25,6 +25,7 @@
     "eslint-plugin-n": "^15.7.0",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "fork-ts-checker-webpack-plugin": "^6.5.3",
     "prettier": "^2.8.8",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",
@@ -33,6 +34,9 @@
   },
   "resolutions": {
     "postcss": "^8.2.10"
+  },
+  "overrides": {
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
