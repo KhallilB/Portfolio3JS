@@ -1,5 +1,5 @@
 import { createTheme } from "@nextui-org/react";
-import style from "./style.module.scss";
+import style from "./_style.module.scss";
 
 const theme = createTheme({
   type: "dark",

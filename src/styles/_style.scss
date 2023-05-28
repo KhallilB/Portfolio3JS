@@ -1,35 +1,35 @@
 // Colors
-$primary: #022B3A;
+$primary: #022b3a;
 $primary-light: lighten($primary, 20);
 $primary-hover: lighten($primary, 30);
 $primary-active: lighten($primary, 40);
-$secondary: #BFDBF7;
+$secondary: #bfdbf7;
 $secondary-light: lighten($secondary, 20);
 $secondary-hover: lighten($secondary, 30);
 $secondary-active: lighten($secondary, 40);
-$alt-primary: #F45B69;
+$alt-primary: #f45b69;
 $alt-primary-light: lighten($alt-primary, 20);
 $alt-primary-hover: lighten($alt-primary, 30);
 $alt-primary-active: lighten($alt-primary, 40);
-$alt-secondary: #7E2E84;
+$alt-secondary: #7e2e84;
 $alt-secondary-light: lighten($alt-secondary, 20);
 $alt-secondary-hover: lighten($alt-secondary, 30);
 $alt-secondary-active: lighten($alt-secondary, 40);
-$tertiary: #E1E5F2;
-$danger: #FF1205;
-$success: #32C732;
+$tertiary: #e1e5f2;
+$danger: #ff1205;
+$success: #32c732;
 $black: #000000;
-$white: #FFFFFF;
+$white: #ffffff;
 
 // Fonts
-$headline: 'Yeseva One', cursive;
-$paragraph: 'Josefin Sans', sans-serif;
+$headline: "Yeseva One", cursive;
+$paragraph: "Josefin Sans", sans-serif;
 
 // Font sizes
-$sm: '0.875rem'; /* 14px */
-$base: '1rem'; /* 16px */
-$lg: '1.125rem'; /* 18px */
-$xl: '1.25rem'; /* 20px */
+$sm: "0.875rem"; /* 14px */
+$base: "1rem"; /* 16px */
+$lg: "1.125rem"; /* 18px */
+$xl: "1.25rem"; /* 20px */
 
 // Font weight
 $normal: 400;

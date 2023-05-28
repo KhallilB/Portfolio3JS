@@ -2,8 +2,6 @@ import React from "react";
 
 import WelcomeMessage from "./components/WelcomeMessage/WelcomeMessage";
 
-import "./App.css";
-
 function App(): JSX.Element {
   return (
     <div className="app_container">
