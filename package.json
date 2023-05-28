@@ -29,11 +29,9 @@
     "prettier": "^2.8.8",
     "react-scripts": "5.0.1",
     "sass": "^1.62.1",
+    "stylelint-config-standard-scss": "^9.0.0",
     "typed-scss-modules": "^7.1.0",
     "typescript": "^5.0.4"
-  },
-  "resolutions": {
-    "postcss": "^8.2.10"
   },
   "overrides": {
     "typescript": "^5.0.4"
@@ -42,8 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "preinstall": "npx npm-force-resolutions"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

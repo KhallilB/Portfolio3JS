@@ -1,0 +1,25 @@
+:export {
+  colors-primary: #022B3A;
+  colors-primaryLight: #05749d;
+  colors-primaryHover: #0799ce;
+  colors-primaryActive: #11b9f7;
+  colors-secondary: #BFDBF7;
+  colors-secondaryLight: white;
+  colors-secondaryHover: white;
+  colors-secondaryActive: white;
+  colors-altPrimary: #F45B69;
+  colors-altPrimaryLight: #fabbc0;
+  colors-altPrimaryHover: #feeaec;
+  colors-altPrimaryActive: white;
+  colors-altSecondary: #7E2E84;
+  colors-altSecondaryLight: #bc54c4;
+  colors-altSecondaryHover: #cb7ad1;
+  colors-altSecondaryActive: #daa0de;
+  colors-tertiary: #E1E5F2;
+  colors-danger: #FF1205;
+  colors-success: #32C732;
+  colors-black: #000000;
+  colors-white: #FFFFFF;
+  fonts-headline: "Yeseva One", cursive;
+  fonts-paragraph: "Josefin Sans", sans-serif;
+}/*# sourceMappingURL=style.module.css.map */

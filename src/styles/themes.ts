@@ -32,6 +32,7 @@ const theme = createTheme({
       headline: style.fontsHeadline,
       paragraph: style.fontsParagraph,
     },
+    fontSizes: {},
   },
 });
 
