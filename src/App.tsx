@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import WelcomeMessage from './components/WelcomeMessage/WelcomeMessage';
+import WelcomeMessage from "./components/WelcomeMessage/WelcomeMessage";
 
-import './App.css';
+import "./App.css";
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="app_container">
       <WelcomeMessage />
