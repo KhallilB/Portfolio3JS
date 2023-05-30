@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unknown-property */
-import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import React from "react";
 
 // import WelcomeMessage from "./components/WelcomeMessage/WelcomeMessage";
-import Deck from "./components/deck/deck";
-import { OrbitControls } from "@react-three/drei";
+import AppCard from "./components/appCard/appCard";
+
+import chef from "./assets/box-art/chef.jpeg";
 
 const style = {
   height: "100vh",
@@ -19,28 +19,7 @@ function App(): JSX.Element {
     <div className="app_container" style={style}>
       {/* <WelcomeMessage /> */}
 
-      <Suspense>
-        <div
-          id="canvas-container"
-          style={{
-            position: "relative",
-            height: "20em",
-            width: "20em",
-            border: "solid orange 1px",
-          }}
-        >
-          <Canvas>
-            <ambientLight intensity={0.4} />
-            <Deck />
-            <OrbitControls
-              enableZoom={false}
-              enablePan={false}
-              autoRotate
-              enableRotate={false}
-            />
-          </Canvas>
-        </div>
-      </Suspense>
+      <AppCard canvasHeight="20em" canvasWidth="20em" image={chef} />
     </div>
   );
 }
