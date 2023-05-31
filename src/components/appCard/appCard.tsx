@@ -12,7 +12,7 @@ interface Props {
 
 const AppCard = (props: Props): JSX.Element => {
   return (
-    <Card className="app_card_container">
+    <Card>
       <Card.Body>
         <BoxArt
           canvasHeight={props.canvasHeight}
