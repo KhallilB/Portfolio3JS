@@ -3,6 +3,7 @@ import React from "react";
 import { Card } from "@nextui-org/react";
 
 import BoxArt from "./boxArt/boxArt";
+import AppInfo from "./appInfo/appInfo";
 
 interface Props {
   canvasHeight: string;
@@ -13,12 +14,16 @@ interface Props {
 const AppCard = (props: Props): JSX.Element => {
   return (
     <Card>
-      <Card.Body>
+      <Card.Body css={{ display: "flex", flexDirection: "row" }}>
         <BoxArt
           canvasHeight={props.canvasHeight}
           canvasWidth={props.canvasWidth}
           image={props.image}
+          css={{ marginRight: "5em" }}
         />
+        <div className="app_details">
+          <AppInfo />
+        </div>
       </Card.Body>
     </Card>
   );

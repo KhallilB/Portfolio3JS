@@ -9,6 +9,7 @@ interface Props {
   canvasHeight: string;
   canvasWidth: string;
   image: string;
+  css: object;
 }
 
 const BoxArt = (props: Props): JSX.Element => {
@@ -23,6 +24,7 @@ const BoxArt = (props: Props): JSX.Element => {
           height: props.canvasHeight,
           width: props.canvasWidth,
           border: "solid orange 1px",
+          ...props.css,
         }}
       >
         <Canvas>
