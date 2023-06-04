@@ -14,7 +14,14 @@ interface Props {
 const AppCard = (props: Props): JSX.Element => {
   return (
     <Card>
-      <Card.Body css={{ display: "flex", flexDirection: "row" }}>
+      <Card.Body
+        css={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <BoxArt
           canvasHeight={props.canvasHeight}
           canvasWidth={props.canvasWidth}

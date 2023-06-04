@@ -44,8 +44,8 @@ function App(): JSX.Element {
 
     // Destop + Ultrawide
     if (width >= 1025) {
-      setCanvasHeight("18em");
-      setCanvasWidth("18em");
+      setCanvasHeight("20em");
+      setCanvasWidth("20em");
     }
   };
 
