@@ -3,7 +3,7 @@ import React from "react";
 import { Card } from "@nextui-org/react";
 
 import BoxArt from "./boxArt/boxArt";
-import AppInfo from "./appInfo/appInfo";
+// import ScreenshotCarousel from "./screenshotCarousel/screenshotCarousel";
 
 interface Props {
   canvasHeight: string;
@@ -18,7 +18,7 @@ const AppCard = (props: Props): JSX.Element => {
         css={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: "flx-start",
           alignItems: "center",
         }}
       >
@@ -29,7 +29,14 @@ const AppCard = (props: Props): JSX.Element => {
           css={{ marginRight: "5em" }}
         />
         <div className="app_details">
-          <AppInfo />
+          <h3>Title</h3>
+          <p>Website</p>
+          <div className="screenshots">
+            <h4>Screenshots</h4>
+            {/* <ScreenshotCarousel /> */}
+          </div>
+          <p>Tech Stack</p>
+          <p>App Summary</p>
         </div>
       </Card.Body>
     </Card>

@@ -1,8 +1,15 @@
 import React from "react";
 
-const WelcomeMessage = (): JSX.Element => {
+const Welcome = (): JSX.Element => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <h1>Hi,{"I'm"} Khallil</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
@@ -25,4 +32,4 @@ const WelcomeMessage = (): JSX.Element => {
   );
 };
 
-export default WelcomeMessage;
+export default Welcome;
