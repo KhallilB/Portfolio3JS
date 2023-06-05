@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Image, Row } from "@nextui-org/react";
 
 const ScreenshotCarousel = (): JSX.Element => {

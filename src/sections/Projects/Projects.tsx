@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-
-// import SubSection from "../../components/section/subSection";
-import AppCard from "../../components/appCard/appCard";
-
+import { Col } from "@nextui-org/react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+
+import AppCard from "../../components/appCard/appCard";
 
 import chef from "../../assets/box-art/chef.jpeg";
 
@@ -44,13 +43,7 @@ const Projects = (): JSX.Element => {
     updateBoxArtDimensions();
   }, [width]);
   return (
-    <div
-      style={{
-        height: "100%",
-        width: "100%",
-        // marginTop: "5em",
-      }}
-    >
+    <Col>
       <h1>Projects</h1>
       <div>
         <AppCard
@@ -59,7 +52,7 @@ const Projects = (): JSX.Element => {
           image={chef}
         />
       </div>
-    </div>
+    </Col>
   );
 };
 

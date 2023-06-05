@@ -1,54 +1,22 @@
 import React from "react";
+import { Row, Container } from "@nextui-org/react";
 
-import { Col, Container } from "@nextui-org/react";
-
-import Section from "./components/section/section";
 import Welcome from "./sections/Welcome/Welcome";
 import Projects from "./sections/Projects/Projects";
 
 function App(): JSX.Element {
+  const style = {
+    sectionHeight: "100vh",
+  };
   return (
-    <Container
-      direction="column"
-      display="flex"
-      fluid
-      css={{ height: "100vh" }}
-    >
-      <Col>
-        <Section>
-          <Welcome />
-        </Section>
+    <Container direction="column" display="flex" fluid>
+      <Row css={{ height: style.sectionHeight }}>
+        <Welcome />
+      </Row>
 
-        <Section>
-          <Projects />
-        </Section>
-      </Col>
-
-      {/* <Row justify="center" align="center" css={{ height: "100vh" }}>
-          <WelcomeMessage />
-        </Row>
-
-        <Row css={{ height: "100vh" }}>
-          <AppCard
-            canvasHeight={canvasHeight}
-            canvasWidth={canvasWidth}
-            image={chef}
-          />
-        </Row>
-        <Row css={{ height: "100vh" }}>
-          <AppCard
-            canvasHeight={canvasHeight}
-            canvasWidth={canvasWidth}
-            image={chef}
-          />
-        </Row>
-        <Row css={{ height: "100vh" }}>
-          <AppCard
-            canvasHeight={canvasHeight}
-            canvasWidth={canvasWidth}
-            image={chef}
-          />
-        </Row> */}
+      <Row css={{ height: style.sectionHeight }}>
+        <Projects />
+      </Row>
     </Container>
   );
 }

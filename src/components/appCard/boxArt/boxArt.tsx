@@ -1,6 +1,4 @@
-// Dependencies
 import React, { Suspense } from "react";
-
 import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, RoundedBox } from "@react-three/drei";
 import { TextureLoader } from "three/src/loaders/TextureLoader";

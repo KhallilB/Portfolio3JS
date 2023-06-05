@@ -1,15 +1,9 @@
 import React from "react";
+import { Col } from "@nextui-org/react";
 
 const Welcome = (): JSX.Element => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <Col>
       <h1>Hi,{"I'm"} Khallil</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
@@ -28,7 +22,7 @@ const Welcome = (): JSX.Element => {
         suscipit, purus sit amet consequat porttitor, sem risus vehicula est,
         non molestie risus arcu eu mi.
       </p>
-    </div>
+    </Col>
   );
 };
 

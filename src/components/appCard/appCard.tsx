@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Card } from "@nextui-org/react";
 
 import BoxArt from "./boxArt/boxArt";
