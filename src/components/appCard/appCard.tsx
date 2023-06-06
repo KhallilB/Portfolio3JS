@@ -25,7 +25,7 @@ const AppCard = (props: Props): JSX.Element => {
           canvasHeight={props.canvasHeight}
           canvasWidth={props.canvasWidth}
           image={props.image}
-          css={{ marginRight: "5em" }}
+          css={{ marginRight: "5rem" }}
         />
         <div className="app_details">
           <h3>Title</h3>
