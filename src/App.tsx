@@ -17,7 +17,7 @@ function App(): JSX.Element {
     scrollSnapAlign: "start",
     display: "flex",
     justifyContent: "center",
-    alignItems: "flext-start",
+    alignItems: "center",
   };
 
   return (
