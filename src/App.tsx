@@ -33,35 +33,6 @@ function App(): JSX.Element {
         </Container>
       </section>
     </div>
-    // <Container
-    //   direction="column"
-    //   display="flex"
-    //   fluid
-    //   css={{
-    //     scrollSnapPointsY: "repeat(300px)",
-    //     scrollSnapType: "y mandatory",
-    //   }}
-    // >
-    //   <Row
-    //     css={{
-    //       height: style.sectionHeight,
-    //       scrollSnapStop: "always",
-    //       scrollSnapAlign: "center",
-    //     }}
-    //   >
-    //     <Welcome />
-    //   </Row>
-
-    //   <Row
-    //     css={{
-    //       height: style.sectionHeight,
-    //       scrollSnapStop: "always",
-    //       scrollSnapAlign: "center",
-    //     }}
-    //   >
-    //     <Projects />
-    //   </Row>
-    // </Container>
   );
 }
 
