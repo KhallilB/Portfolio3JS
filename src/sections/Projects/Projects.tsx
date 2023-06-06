@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, type CSSProperties } from "react";
 import { Col } from "@nextui-org/react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -39,18 +39,48 @@ const Projects = (): JSX.Element => {
     }
   };
 
+  const projectsContainerStyle: CSSProperties = {
+    maxHeight: "80vh",
+    overflowY: "scroll",
+    scrollSnapType: "y mandatory",
+  };
+
+  const projectStyle: CSSProperties = {
+    height: "80vh",
+    border: "solid 1px orange",
+    scrollSnapAlign: "start",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
   useEffect(() => {
     updateBoxArtDimensions();
   }, [width]);
   return (
     <Col>
       <h1>Projects</h1>
-      <div>
-        <AppCard
-          canvasHeight={canvasHeight}
-          canvasWidth={canvasWidth}
-          image={chef}
-        />
+      <div style={projectsContainerStyle}>
+        <div style={projectStyle}>
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+        </div>
+        <div style={projectStyle}>
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+        </div>
+        <div style={projectStyle}>
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+        </div>
       </div>
     </Col>
   );
