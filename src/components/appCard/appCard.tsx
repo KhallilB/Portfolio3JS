@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "@nextui-org/react";
 
 import BoxArt from "./boxArt/boxArt";
-// import ScreenshotCarousel from "./screenshotCarousel/screenshotCarousel";
+import ScreenshotCarousel from "./screenshotCarousel/screenshotCarousel";
 
 interface Props {
   canvasHeight: string;
@@ -32,7 +32,7 @@ const AppCard = (props: Props): JSX.Element => {
           <p>Website</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
-            {/* <ScreenshotCarousel /> */}
+            <ScreenshotCarousel />
           </div>
           <p>Tech Stack</p>
           <p>App Summary</p>

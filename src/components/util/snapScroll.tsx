@@ -10,6 +10,8 @@ interface Props {
   sectionStyle?: CSSProperties;
 }
 
+// TODO: On scroll up reduce container opacity
+
 const SnapScroll = (props: PropsWithChildren<Props>): JSX.Element => {
   return (
     <div
