@@ -58,18 +58,21 @@ const Projects = (): JSX.Element => {
             canvasHeight={canvasHeight}
             canvasWidth={canvasWidth}
             image={chef}
+            isLive={false}
           />
 
           <AppCard
             canvasHeight={canvasHeight}
             canvasWidth={canvasWidth}
             image={chef}
+            isLive={false}
           />
 
           <AppCard
             canvasHeight={canvasHeight}
             canvasWidth={canvasWidth}
             image={chef}
+            isLive={false}
           />
         </SnapScroll>
       </Col>

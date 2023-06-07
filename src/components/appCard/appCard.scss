@@ -1,0 +1,26 @@
+@import "../../styles/style";
+
+.box_art_container {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(0,0,0,.5);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tag {
+        transform: rotate(-0.10turn);
+        width: 200%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        background-color: $alt-primary;
+        border-radius: 5px;
+    }
+  }
+}

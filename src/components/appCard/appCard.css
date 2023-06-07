@@ -1,0 +1,25 @@
+/* 14px */
+/* 16px */
+/* 18px */
+/* 20px */
+.box_art_container {
+  position: relative;
+}
+.box_art_container .overlay {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_art_container .overlay .tag {
+  transform: rotate(-0.1turn);
+  width: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-color: #f45b69;
+  border-radius: 5px;
+}/*# sourceMappingURL=appCard.css.map */

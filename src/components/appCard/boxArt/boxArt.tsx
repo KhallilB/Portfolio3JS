@@ -22,6 +22,7 @@ const BoxArt = (props: Props): JSX.Element => {
           height: props.canvasHeight,
           width: props.canvasWidth,
           border: "solid orange 1px",
+          zIndex: 1,
           ...props.css,
         }}
       >
