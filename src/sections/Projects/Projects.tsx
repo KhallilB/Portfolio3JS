@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, type CSSProperties } from "react";
+import React, { useState, useEffect } from "react";
 import { Col, Container } from "@nextui-org/react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
@@ -6,13 +6,14 @@ import AppCard from "../../components/appCard/appCard";
 
 import chef from "../../assets/box-art/chef.jpeg";
 import "./Projects.css";
+import SnapScroll from "../../components/util/snapScroll";
 
 const Projects = (): JSX.Element => {
   const [canvasHeight, setCanvasHeight] = useState("");
   const [canvasWidth, setCanvasWidth] = useState("");
-  const [isVisible, setVisible] = React.useState(true);
+  // const [isVisible, setVisible] = React.useState(true);
 
-  const domRef = useRef<HTMLDivElement>(null);
+  // const domRef = useRef<HTMLDivElement>(null);
   // Use breakpoints to determine box art height
   const { width } = useWindowDimensions();
 
@@ -42,38 +43,38 @@ const Projects = (): JSX.Element => {
     }
   };
 
-  const projectsContainerStyle: CSSProperties = {
-    maxHeight: "80vh",
-    overflowY: "scroll",
-    scrollSnapType: "y mandatory",
-  };
+  // const projectsContainerStyle: CSSProperties = {
+  //   maxHeight: "80vh",
+  //   overflowY: "scroll",
+  //   scrollSnapType: "y mandatory",
+  // };
 
-  const projectStyle: CSSProperties = {
-    height: "80vh",
-    border: "solid 1px orange",
-    scrollSnapAlign: "start",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
+  // const projectStyle: CSSProperties = {
+  //   height: "80vh",
+  //   border: "solid 1px orange",
+  //   scrollSnapAlign: "start",
+  //   display: "flex",
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  // };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        setVisible(entry.isIntersecting);
-      });
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     entries.forEach((entry) => {
+  //       setVisible(entry.isIntersecting);
+  //     });
 
-      if (domRef.current !== null) {
-        observer.observe(domRef.current);
-      }
+  //     if (domRef.current !== null) {
+  //       observer.observe(domRef.current);
+  //     }
 
-      return () => {
-        if (domRef.current !== null) {
-          observer.unobserve(domRef.current);
-        }
-      };
-    });
-  });
+  //     return () => {
+  //       if (domRef.current !== null) {
+  //         observer.unobserve(domRef.current);
+  //       }
+  //     };
+  //   });
+  // });
 
   useEffect(() => {
     updateBoxArtDimensions();
@@ -83,34 +84,40 @@ const Projects = (): JSX.Element => {
     <Container responsive>
       <Col>
         <h1>Projects</h1>
-        <div style={projectsContainerStyle}>
-          <div
+        <SnapScroll
+          sections={["project_1", "project_2", "project_3"]}
+          containerStyle={{ maxHeight: "80vh" }}
+          sectionStyle={{ height: "80vh" }}
+        >
+          {/* <div style={projectsContainerStyle}> */}
+          {/* <div
             className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
             ref={domRef}
-          >
-            <div style={projectStyle}>
-              <AppCard
-                canvasHeight={canvasHeight}
-                canvasWidth={canvasWidth}
-                image={chef}
-              />
-            </div>
-            <div style={projectStyle}>
-              <AppCard
-                canvasHeight={canvasHeight}
-                canvasWidth={canvasWidth}
-                image={chef}
-              />
-            </div>
-            <div style={projectStyle}>
-              <AppCard
-                canvasHeight={canvasHeight}
-                canvasWidth={canvasWidth}
-                image={chef}
-              />
-            </div>
-          </div>
-        </div>
+          > */}
+          {/* <div style={projectStyle}> */}
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+          {/* </div> */}
+          {/* <div style={projectStyle}> */}
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+          {/* </div> */}
+          {/* <div style={projectStyle}> */}
+          <AppCard
+            canvasHeight={canvasHeight}
+            canvasWidth={canvasWidth}
+            image={chef}
+          />
+          {/* </div> */}
+          {/* </div> */}
+        </SnapScroll>
+        {/* </div> */}
       </Col>
     </Container>
   );
