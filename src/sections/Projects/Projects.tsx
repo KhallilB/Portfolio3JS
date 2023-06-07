@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, type CSSProperties } from "react";
-import { Col } from "@nextui-org/react";
+import { Col, Container } from "@nextui-org/react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import AppCard from "../../components/appCard/appCard";
@@ -80,37 +80,39 @@ const Projects = (): JSX.Element => {
   }, [width]);
 
   return (
-    <Col>
-      <h1>Projects</h1>
-      <div style={projectsContainerStyle}>
-        <div
-          className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
-          ref={domRef}
-        >
-          <div style={projectStyle}>
-            <AppCard
-              canvasHeight={canvasHeight}
-              canvasWidth={canvasWidth}
-              image={chef}
-            />
-          </div>
-          <div style={projectStyle}>
-            <AppCard
-              canvasHeight={canvasHeight}
-              canvasWidth={canvasWidth}
-              image={chef}
-            />
-          </div>
-          <div style={projectStyle}>
-            <AppCard
-              canvasHeight={canvasHeight}
-              canvasWidth={canvasWidth}
-              image={chef}
-            />
+    <Container responsive>
+      <Col>
+        <h1>Projects</h1>
+        <div style={projectsContainerStyle}>
+          <div
+            className={`fade-in-section ${isVisible ? "is-visible" : ""}`}
+            ref={domRef}
+          >
+            <div style={projectStyle}>
+              <AppCard
+                canvasHeight={canvasHeight}
+                canvasWidth={canvasWidth}
+                image={chef}
+              />
+            </div>
+            <div style={projectStyle}>
+              <AppCard
+                canvasHeight={canvasHeight}
+                canvasWidth={canvasWidth}
+                image={chef}
+              />
+            </div>
+            <div style={projectStyle}>
+              <AppCard
+                canvasHeight={canvasHeight}
+                canvasWidth={canvasWidth}
+                image={chef}
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </Col>
+      </Col>
+    </Container>
   );
 };
 
