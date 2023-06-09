@@ -3,10 +3,13 @@ import { Col, Container } from "@nextui-org/react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 import AppCard from "../../components/appCard/appCard";
+import SnapScroll from "../../components/util/snapScroll";
 
 import chef from "../../assets/box-art/chef.jpeg";
+import cars from "../../assets/box-art/cars.jpeg";
+import fitness from "../../assets/box-art/fitness.jpeg";
+
 import "./Projects.css";
-import SnapScroll from "../../components/util/snapScroll";
 
 const Projects = (): JSX.Element => {
   const [canvasHeight, setCanvasHeight] = useState("");
@@ -64,14 +67,14 @@ const Projects = (): JSX.Element => {
           <AppCard
             canvasHeight={canvasHeight}
             canvasWidth={canvasWidth}
-            image={chef}
+            image={cars}
             isLive={false}
           />
 
           <AppCard
             canvasHeight={canvasHeight}
             canvasWidth={canvasWidth}
-            image={chef}
+            image={fitness}
             isLive={false}
           />
         </SnapScroll>
