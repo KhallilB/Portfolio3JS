@@ -62,6 +62,13 @@ const Projects = (): JSX.Element => {
             canvasWidth={canvasWidth}
             image={chef}
             isLive={false}
+            details={{
+              title: "ChefsTable",
+              website: "http://chefstable.com",
+              techStack: ["React", "Node", "MongoDB"],
+              summary:
+                "This app allows users to track their current inventory of ingredients and create a recipe based on what that have on hand",
+            }}
           />
 
           <AppCard
@@ -69,6 +76,13 @@ const Projects = (): JSX.Element => {
             canvasWidth={canvasWidth}
             image={cars}
             isLive={false}
+            details={{
+              title: "Car Restoration",
+              website: "http://carrestoration.com",
+              techStack: ["React", "Node", "MongoDB"],
+              summary:
+                "This is an app that allows users to connect with other users to restore apps or host their garages for restoration projects.",
+            }}
           />
 
           <AppCard
@@ -76,6 +90,13 @@ const Projects = (): JSX.Element => {
             canvasWidth={canvasWidth}
             image={fitness}
             isLive={false}
+            details={{
+              title: "FitBuddy",
+              website: "http://fitbuddy.com",
+              techStack: ["React", "Node", "MongoDB"],
+              summary:
+                "This is an app that allows users to create fitness workouts and find people to workout with them near them.",
+            }}
           />
         </SnapScroll>
       </Col>

@@ -11,6 +11,13 @@ interface Props {
   canvasWidth: string;
   image: string;
   isLive?: boolean;
+  details: {
+    title: string;
+    website: string;
+    screenshots?: string[];
+    techStack: string[];
+    summary: string;
+  };
 }
 
 const AppCard = (props: Props): JSX.Element => {
