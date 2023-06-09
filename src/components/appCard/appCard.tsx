@@ -53,14 +53,18 @@ const AppCard = (props: Props): JSX.Element => {
 
         {/* Project Info */}
         <div className="app_details">
-          <h3>Title</h3>
-          <p>Website</p>
+          <h3>{props.details.title}</h3>
+          <p>{props.details.website}</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
             <ScreenshotCarousel />
           </div>
-          <p>Tech Stack</p>
-          <p>App Summary</p>
+          <div className="tech_stack">
+            {props.details.techStack.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </div>
+          <p>{props.details.summary}</p>
         </div>
       </Card.Body>
     </Card>
