@@ -21,7 +21,6 @@ const BoxArt = (props: Props): JSX.Element => {
           position: "relative",
           height: props.canvasHeight,
           width: props.canvasWidth,
-          border: "solid orange 1px",
           zIndex: 1,
           ...props.css,
         }}

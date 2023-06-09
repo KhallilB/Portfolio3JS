@@ -28,7 +28,6 @@ const SnapScroll = (props: PropsWithChildren<Props>): JSX.Element => {
             id={props.sections[index]}
             className="child"
             style={{
-              border: "solid 1px orange",
               scrollSnapAlign: "start",
               display: "flex",
               justifyContent: "center",
