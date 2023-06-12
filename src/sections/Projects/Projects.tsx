@@ -52,6 +52,11 @@ const Projects = (): JSX.Element => {
     <Container responsive>
       <Col>
         <h1>Projects</h1>
+        <div className="tab_bar">
+          <h3>Apps</h3>
+          <span id="divider" />
+          <h3>Design</h3>
+        </div>
         <SnapScroll
           sections={["project_1", "project_2", "project_3"]}
           containerStyle={{ maxHeight: "80vh" }}

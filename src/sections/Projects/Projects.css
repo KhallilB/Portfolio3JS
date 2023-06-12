@@ -10,4 +10,15 @@
   opacity: 1;
   transform: none;
   visibility: visible;
+}
+
+.tab_bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tab_bar #divider {
+  width: 2rem;
 }/*# sourceMappingURL=Projects.css.map */
