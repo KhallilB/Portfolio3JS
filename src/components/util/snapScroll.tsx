@@ -16,9 +16,11 @@ const SnapScroll = (props: PropsWithChildren<Props>): JSX.Element => {
   return (
     <div
       className="container"
+      id="snap_scrollbar"
       style={{
         overflowY: "scroll",
         scrollSnapType: "y mandatory",
+        scrollbarWidth: "none",
         ...props.containerStyle,
       }}
     >

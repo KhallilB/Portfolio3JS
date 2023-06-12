@@ -1,9 +1,3 @@
-body::-webkit-scrollbar{
-    display: none;
-    width: 0 !important;
-}
-
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+#snap_scrollbar::-webkit-scrollbar {
+  width: 0px;
 }
