@@ -81,7 +81,7 @@ const Projects = (): JSX.Element => {
               website: "http://carrestoration.com",
               techStack: ["React", "Node", "MongoDB"],
               summary:
-                "This is an app that allows users to connect with other users to restore apps or host their garages for restoration projects.",
+                "This is an app that allows users' to connect with other users to restore apps or host their garages for restoration projects.",
             }}
           />
 
