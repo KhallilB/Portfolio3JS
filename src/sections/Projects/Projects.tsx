@@ -39,8 +39,8 @@ const Projects = (): JSX.Element => {
 
     // Destop + Ultrawide
     if (width >= 1025) {
-      setCanvasHeight("20em");
-      setCanvasWidth("20em");
+      setCanvasHeight("21em");
+      setCanvasWidth("21em");
     }
   };
 
