@@ -31,28 +31,6 @@ const ScreenshotCarousel = (props: Props): JSX.Element => {
           );
         })}
       </Carousel>
-
-      {/* <Image
-        width={300}
-        height={180}
-        src="https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true"
-        alt="Default Image"
-        objectFit="cover"
-      />
-      <Image
-        width={300}
-        height={180}
-        src="https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true"
-        alt="Default Image"
-        objectFit="cover"
-      />
-      <Image
-        width={300}
-        height={180}
-        src="https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true"
-        alt="Default Image"
-        objectFit="cover"
-      /> */}
     </Row>
   );
 };
