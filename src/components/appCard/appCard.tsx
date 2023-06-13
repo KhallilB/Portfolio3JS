@@ -22,7 +22,7 @@ interface Props {
 
 const AppCard = (props: Props): JSX.Element => {
   return (
-    <Card>
+    <Card css={{ padding: "1em" }}>
       <Card.Body
         css={{
           display: "flex",
@@ -57,7 +57,14 @@ const AppCard = (props: Props): JSX.Element => {
           <p>{props.details.website}</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
-            <ScreenshotCarousel />
+            <ScreenshotCarousel
+              imageUrls={[
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+              ]}
+            />
           </div>
           <div className="tech_stack">
             {props.details.techStack.map((item, index) => (

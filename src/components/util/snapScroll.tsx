@@ -34,6 +34,7 @@ const SnapScroll = (props: PropsWithChildren<Props>): JSX.Element => {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              marginBottom: "1em",
               ...props.sectionStyle,
             }}
             key={index}
