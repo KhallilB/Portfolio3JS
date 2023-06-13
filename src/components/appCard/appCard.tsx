@@ -17,6 +17,7 @@ interface Props {
     screenshots?: string[];
     techStack: string[];
     summary: string;
+    imageUrls: string[];
   };
 }
 
@@ -57,14 +58,7 @@ const AppCard = (props: Props): JSX.Element => {
           <p>{props.details.website}</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
-            <ScreenshotCarousel
-              imageUrls={[
-                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
-                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
-                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
-                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
-              ]}
-            />
+            <ScreenshotCarousel imageUrls={props.details.imageUrls} />
           </div>
           <div className="tech_stack">
             {props.details.techStack.map((item, index) => (

@@ -73,6 +73,12 @@ const Projects = (): JSX.Element => {
               techStack: ["React", "Node", "MongoDB"],
               summary:
                 "This app allows users to track their current inventory of ingredients and create a recipe based on what that have on hand",
+              imageUrls: [
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+              ],
             }}
           />
 
@@ -87,6 +93,12 @@ const Projects = (): JSX.Element => {
               techStack: ["React", "Node", "MongoDB"],
               summary:
                 "This is an app that allows users' to connect with other users to restore apps or host their garages for restoration projects.",
+              imageUrls: [
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+              ],
             }}
           />
 
@@ -101,6 +113,12 @@ const Projects = (): JSX.Element => {
               techStack: ["React", "Node", "MongoDB"],
               summary:
                 "This is an app that allows users to create fitness workouts and find people to workout with them near them.",
+              imageUrls: [
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+                "https://github.com/nextui-org/nextui/blob/next/apps/docs/public/nextui-banner.jpeg?raw=true",
+              ],
             }}
           />
         </SnapScroll>

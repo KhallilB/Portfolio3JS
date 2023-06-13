@@ -20,8 +20,6 @@ const ScreenshotCarousel = (props: Props): JSX.Element => {
           return (
             <div key={index}>
               <Image
-                // width={250}
-                // height={250}
                 autoResize={true}
                 src={url}
                 alt={`Screenshot ${index + 1}`}
