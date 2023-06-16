@@ -28,7 +28,7 @@ const AppCard = (props: Props): JSX.Element => {
         css={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "flx-start",
+          justifyContent: "flex-start",
           alignItems: "center",
         }}
       >
@@ -37,7 +37,11 @@ const AppCard = (props: Props): JSX.Element => {
           {props.isLive === false ? (
             <div
               className="overlay"
-              style={{ height: props.canvasHeight, width: props.canvasWidth }}
+              style={{
+                height: props.canvasHeight,
+                width: props.canvasWidth,
+                borderRadius: "0.5em",
+              }}
             >
               <div className="tag">
                 <h2>Coming Soon!</h2>
@@ -58,7 +62,11 @@ const AppCard = (props: Props): JSX.Element => {
           <p>{props.details.website}</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
-            <ScreenshotCarousel imageUrls={props.details.imageUrls} />
+            <ScreenshotCarousel
+              imageUrls={props.details.imageUrls}
+              height={props.canvasHeight}
+              width={props.canvasWidth}
+            />
           </div>
           <div className="tech_stack">
             {props.details.techStack.map((item, index) => (

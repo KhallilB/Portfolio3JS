@@ -4,6 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 
 interface Props {
   imageUrls: string[];
+  height?: string;
+  width?: string;
 }
 
 const ScreenshotCarousel = (props: Props): JSX.Element => {
@@ -15,7 +17,12 @@ const ScreenshotCarousel = (props: Props): JSX.Element => {
 
   return (
     <Row gap={1} justify="center">
-      <Carousel showStatus={false} autoPlay={true} interval={2500}>
+      <Carousel
+        showStatus={false}
+        autoPlay={true}
+        interval={2500}
+        infiniteLoop={true}
+      >
         {props.imageUrls.map((url, index) => {
           return (
             <div key={index}>
@@ -23,7 +30,11 @@ const ScreenshotCarousel = (props: Props): JSX.Element => {
                 autoResize={true}
                 src={url}
                 alt={`Screenshot ${index + 1}`}
-                objectFit="cover"
+                css={{
+                  borderRadius: "0.5em",
+                  height: props.height,
+                  width: props.width,
+                }}
               />
             </div>
           );
