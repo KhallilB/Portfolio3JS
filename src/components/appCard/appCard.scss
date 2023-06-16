@@ -24,3 +24,20 @@
     }
   }
 }
+
+.tech_stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  p {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: $alt-primary;
+    color: $primary;
+    font-weight: 600;
+  }
+}

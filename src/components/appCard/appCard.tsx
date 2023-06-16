@@ -60,6 +60,12 @@ const AppCard = (props: Props): JSX.Element => {
         <div className="app_details">
           <h3>{props.details.title}</h3>
           <p>{props.details.website}</p>
+          <div className="tech_stack">
+            {props.details.techStack.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
+          </div>
+          <p>{props.details.summary}</p>
           <div className="screenshots">
             <h4>Screenshots</h4>
             <ScreenshotCarousel
@@ -68,12 +74,6 @@ const AppCard = (props: Props): JSX.Element => {
               width={props.canvasWidth}
             />
           </div>
-          <div className="tech_stack">
-            {props.details.techStack.map((item, index) => (
-              <p key={index}>{item}</p>
-            ))}
-          </div>
-          <p>{props.details.summary}</p>
         </div>
       </Card.Body>
     </Card>
