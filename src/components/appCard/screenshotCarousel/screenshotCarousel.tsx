@@ -9,6 +9,8 @@ interface Props {
 }
 
 const ScreenshotCarousel = (props: Props): JSX.Element => {
+  // const [selectedSlide, setSelectedSlide] = React.useState(null);
+  // const [interval, setInterval] = React.useState(2500);
   const imageRefs = useRef(props.imageUrls.map(() => createRef()));
 
   useEffect(() => {
@@ -22,6 +24,8 @@ const ScreenshotCarousel = (props: Props): JSX.Element => {
         autoPlay={true}
         interval={2500}
         infiniteLoop={true}
+        swipeable={true}
+        emulateTouch={true}
       >
         {props.imageUrls.map((url, index) => {
           return (
