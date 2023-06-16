@@ -29,10 +29,21 @@ const theme = createTheme({
     },
     space: {},
     fonts: {
-      headline: style.fontsHeadline,
-      paragraph: style.fontsParagraph,
+      sans: style.fontsSans,
+      cursive: style.fontsCursive,
     },
-    fontSizes: {},
+    fontSizes: {
+      sm: style.fontSizesSm,
+      base: style.fontSizesBase,
+      lg: style.fontSizesLg,
+      xl: style.fontSizesXl,
+      "2xl": style.fontSizesXl2,
+      "3xl": style.fontSizesXl3,
+      "4xl": style.fontSizesXl4,
+      "5xl": style.fontSizesXl5,
+      "6xl": style.fontSizesXl6,
+      "7xl": style.fontSizesXl7,
+    },
   },
 });
 

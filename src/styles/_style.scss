@@ -22,16 +22,22 @@ $black: #000000;
 $white: #ffffff;
 
 // Fonts
-$headline: "Yeseva One", cursive;
-$paragraph: "Josefin Sans", sans-serif;
+$cursive: "Yeseva One", cursive;
+$sans: "Josefin Sans", sans-serif;
 
 // Font sizes
 $sm: "0.875rem"; /* 14px */
 $base: "1rem"; /* 16px */
 $lg: "1.125rem"; /* 18px */
 $xl: "1.25rem"; /* 20px */
+$xl-2: "1.5rem"; /* 24px */
+$xl-3: "1.875rem"; /* 30px */
+$xl-4: "2.25rem"; /* 36px */
+$xl-5: "3rem"; /* 48px */
+$xl-6: "3.75rem"; /* 60px */
+$xl-7: "4.5rem"; /* 72px */
 
-// Font weight
+// Font weight  
 $normal: 400;
 $medium: 500;
 $bold: 700;
